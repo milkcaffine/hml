@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haemin Lee | Korea-born, Japan-based Creative Professional | Multilingual Content & Marketing Specialist">
     <title>Haemin Lee | Resume</title>
     <style>
         :root {
             --primary: #1a1a2e;
             --accent: #0f3460;
             --text: #e0e0e0;
+            --highlight: #00d4ff;
         }
         * { margin:0; padding:0; box-sizing:border-box; }
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
             background: #0a0a0a;
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
             padding: 0;
         }
         header {
             background: linear-gradient(135deg, #1a1a2e, #0f3460);
-            padding: 3rem 5%;
+            padding: 3.5rem 5%;
             text-align: center;
             border-bottom: 4px solid #16213e;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 3.2rem;
             margin-bottom: 0.5rem;
+            letter-spacing: -1px;
         }
         .subtitle {
-            font-size: 1.3rem;
-            opacity: 0.9;
+            font-size: 1.35rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
         }
         nav {
             margin: 2rem 0;
@@ -38,23 +42,23 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1rem;
+            margin: 0 1.1rem;
             font-weight: 500;
             transition: color 0.3s;
         }
-        nav a:hover { color: #00d4ff; }
-       
+        nav a:hover { color: var(--highlight); }
+      
         section {
-            padding: 4rem 8%;
+            padding: 4.5rem 8%;
             max-width: 1000px;
             margin: 0 auto;
         }
         h2 {
-            font-size: 2rem;
+            font-size: 2.1rem;
             margin-bottom: 2rem;
-            border-bottom: 3px solid #00d4ff;
-            padding-bottom: 0.5rem;
-            color: #00d4ff;
+            border-bottom: 3px solid var(--highlight);
+            padding-bottom: 0.6rem;
+            color: var(--highlight);
         }
         .about {
             display: flex;
@@ -62,56 +66,63 @@
             align-items: center;
         }
         .photo {
-            width: 180px;
-            height: 180px;
+            width: 190px;
+            height: 190px;
             border-radius: 50%;
-            border: 4px solid #00d4ff;
+            border: 5px solid var(--highlight);
             flex-shrink: 0;
-            background: url('/images/haeminl.jpg') center/cover;
+            background: url('/images/haeminl.jpg') center/cover no-repeat;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
         }
-        .experience-item, .project-item {
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
+        .experience-item {
+            margin-bottom: 2.2rem;
+            padding-bottom: 1.6rem;
             border-bottom: 1px solid #333;
         }
         .job-title {
             font-weight: bold;
-            color: #00d4ff;
+            color: var(--highlight);
+            font-size: 1.2rem;
         }
         .company {
             font-size: 1.1rem;
+            color: #aaa;
         }
         ul {
-            padding-left: 1.5rem;
+            padding-left: 1.6rem;
             margin: 1rem 0;
         }
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.2rem;
         }
         .skill {
             background: #16213e;
-            padding: 1rem;
+            padding: 1.1rem;
             border-radius: 8px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
         .skill:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
             background: #1e2a5a;
+            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.15);
         }
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem;
             background: #111;
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 0.85;
         }
-        a { color: #00d4ff; text-decoration: none; }
+        a { color: var(--highlight); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
         @media (max-width: 768px) {
             .about { flex-direction: column; text-align: center; }
-            h1 { font-size: 2.4rem; }
+            h1 { font-size: 2.5rem; }
+            .photo { width: 160px; height: 160px; }
         }
     </style>
 </head>
@@ -119,8 +130,9 @@
     <header>
         <h1>HAEMIN LEE</h1>
         <p class="subtitle">Korea-born • Japan-based Creative Professional</p>
-        <p>Creative Writing • Social Media / Marketing Specialist (Actively Seeking)</p>
-       
+        <p>Multilingual Marketing • Content Strategy • Creative Writing Specialist<br>
+        <strong>Actively Seeking Marketing Manager / Social Media Roles in Games & Entertainment</strong></p>
+      
         <nav>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
@@ -135,44 +147,43 @@
         <div class="about">
             <div class="photo"></div>
             <div>
-                <p>Korea-born, Japan-based creative professional with over 11 years of residency in Japan.</p>
-                <p>Actively seeking Social Media, Marketing, or Publishing roles in the games and entertainment industry. Strong multilingual capabilities (Korean, English, Japanese) and proven experience in creative content production.</p>
-                <p>I enjoy writing tanka while walking in Tokyo suburbs and shooting B&amp;W film photography. Currently serializing cyberpunk, horror, and sci-fi novels.</p>
+                <p>Korea-born and based in Tokyo for over 6 years. I bring a unique blend of multilingual fluency, editorial expertise, and creative passion to the table.</p>
+                <p>Currently working at Google Play Store, leading Korean editorial efforts for nearly 4 years while collaborating closely with Marketing & GTM teams.</p>
+                <p>When not working, I write dark cyberpunk/horror/sci-fi novels, tanka poetry during Tokyo walks, and shoot caffenol B&W film photography.</p>
             </div>
         </div>
     </section>
 
     <section id="experience" style="background:#111;">
         <h2>Professional Experience</h2>
-        
+       
         <div class="experience-item">
             <div class="job-title">Content &amp; Multilingual Communications Specialist</div>
-            <div class="company">Current Company</div>
+            <div class="company">Current Company (Google Play Store)</div>
             <div>2022 – Present</div>
             <ul>
-                <li>Leverage Korean, English, and Japanese in daily multilingual communications and creative operations</li>
-                <li>Content review, tagging, and moderation (building on prior YouTube AI moderation experience)</li>
-                <li><strong>Led high-impact editorial projects that achieved tens of millions of views</strong>, delivering consecutive major successes that far surpassed previous multi-million view benchmarks.</li>
+                <li>Fully responsible for Korean editorial work for nearly 4 years</li>
+                <li>Perform Korean translations, QA other translators’ work, and adapt content to Google Play’s tone of voice</li>
+                <li>Work closely with Marketing Managers as part of the Go-To-Market (GTM) team</li>
+                <li>Led high-impact editorial projects that achieved tens of millions of views</li>
             </ul>
         </div>
 
         <div class="experience-item">
             <div class="job-title">Play Store Editor / YouTube Content Moderator</div>
             <div class="company">Google via Vaco</div>
-            <div>Previous</div>
+            <div>2021 – 2022</div>
             <ul>
-                <li>Multilingual content review and AI-driven tag management</li>
-                <li>Enforced community guidelines across global platforms</li>
+                <li>Multilingual content review, AI tagging, and community guideline enforcement</li>
             </ul>
         </div>
 
         <div class="experience-item">
             <div class="job-title">Graphics &amp; Traditional Art</div>
-            <div class="company">Package Design, Book &amp; Print Design (Art Major Background)</div>
+            <div class="company">Package Design, Book &amp; Print Design</div>
             <div>Earlier Career</div>
             <ul>
-                <li>Hands-on experience in graphic design and visual content creation</li>
-                <li>Team collaboration and end-to-end content production</li>
+                <li>Hands-on graphic design and visual content creation (Art major background)</li>
             </ul>
         </div>
     </section>
@@ -181,39 +192,44 @@
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill">Korean (Native)</div>
-            <div class="skill">English (TOEIC 895, Business Level)</div>
+            <div class="skill">English (Business Fluent, TOEIC 895)</div>
             <div class="skill">Japanese (JLPT N1, Near-Native)</div>
-            <div class="skill">Social Media Management</div>
+            <div class="skill">Marketing &amp; GTM Collaboration</div>
+            <div class="skill">Social Media Strategy</div>
             <div class="skill">Content Creation &amp; Editing</div>
-            <div class="skill">Photography &amp; Editing (Film &amp; Digital)</div>
-            <div class="skill">Creative Writing (Novels &amp; Poetry)</div>
-            <div class="skill">Multilingual Communication</div>
+            <div class="skill">Creative Writing (Novels, Poetry)</div>
+            <div class="skill">Photography (Film &amp; Digital)</div>
         </div>
     </section>
 
     <section id="creative" style="background:#111;">
         <h2>Creative Works</h2>
-        <div class="project-item">
-            <strong>001 Series</strong> — Ongoing cyberpunk / horror / sci-fi novel serialization with poetry
+        <div class="project-item" style="margin-bottom:1.8rem;">
+            <strong>001 Series</strong> — Ongoing cyberpunk / horror / sci-fi novel serialization (English &amp; multilingual)
+        </div>
+        <div class="project-item" style="margin-bottom:1.8rem;">
+            <strong>Tanka &amp; Haiku</strong> — Regular Japanese short-form poetry paired with Tokyo suburban walks and film photography
         </div>
         <div class="project-item">
-            <strong>Tanka &amp; Haiku</strong> — Regular Japanese poetry writing, often paired with Tokyo walks and photography
+            <strong>Caffenol B&amp;W Film Photography</strong> — Analog film projects
         </div>
-        <div class="project-item">
-            <strong>Caffenol B&amp;W Film Photography</strong> — Analog film photography projects
-        </div>
+        <p style="margin-top: 2rem; text-align:center;">
+            <a href="https://x.com/RMars2675" target="_blank">→ View my creative works on X (@RMars2675)</a>
+        </p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p style="text-align:center; font-size:1.2rem;">
-            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/haeminl" target="_blank">linkedin.com/in/haeminl</a>
+        <p style="text-align:center; font-size:1.25rem; line-height:1.8;">
+            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/haeminl" target="_blank">linkedin.com/in/haeminl</a><br>
+            <strong>X / Twitter:</strong> <a href="https://x.com/RMars2675" target="_blank">@RMars2675</a><br>
+            <strong>Email:</strong> [너 이메일 넣어]
         </p>
     </section>
 
     <footer>
         © 2026 Haemin Lee. Tokyo, Japan.<br>
-        Made with ❤️ for quick job applications
+        Made with ❤️ for passionate applications
     </footer>
 
     <script>
