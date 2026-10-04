@@ -1,247 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Haemin Lee | Korea-born, Japan-based Creative Professional | Multilingual Content & Marketing Specialist">
-    <title>Haemin Lee | Resume</title>
-    <style>
-        :root {
-            --primary: #1a1a2e;
-            --accent: #0f3460;
-            --text: #e0e0e0;
-            --highlight: #00d4ff;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: #0a0a0a;
-            color: var(--text);
-            line-height: 1.7;
-            padding: 0;
-        }
-        header {
-            background: linear-gradient(135deg, #1a1a2e, #0f3460);
-            padding: 3.5rem 5%;
-            text-align: center;
-            border-bottom: 4px solid #16213e;
-        }
-        h1 {
-            font-size: 3.2rem;
-            margin-bottom: 0.5rem;
-            letter-spacing: -1px;
-        }
-        .subtitle {
-            font-size: 1.35rem;
-            opacity: 0.95;
-            margin-bottom: 1rem;
-        }
-        nav {
-            margin: 2rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1.1rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover { color: var(--highlight); }
-      
-        section {
-            padding: 4.5rem 8%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        h2 {
-            font-size: 2.1rem;
-            margin-bottom: 2rem;
-            border-bottom: 3px solid var(--highlight);
-            padding-bottom: 0.6rem;
-            color: var(--highlight);
-        }
-        .about {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
-        .photo {
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            border: 5px solid var(--highlight);
-            flex-shrink: 0;
-            background: url('/images/haeminl.jpg') center/cover no-repeat;
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-        }
-        .experience-item {
-            margin-bottom: 2.2rem;
-            padding-bottom: 1.6rem;
-            border-bottom: 1px solid #333;
-        }
-        .job-title {
-            font-weight: bold;
-            color: var(--highlight);
-            font-size: 1.2rem;
-        }
-        .company {
-            font-size: 1.1rem;
-            color: #aaa;
-        }
-        ul {
-            padding-left: 1.6rem;
-            margin: 1rem 0;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.2rem;
-        }
-        .skill {
-            background: #16213e;
-            padding: 1.1rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s;
-        }
-        .skill:hover {
-            transform: translateY(-6px);
-            background: #1e2a5a;
-            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.15);
-        }
-        footer {
-            text-align: center;
-            padding: 2.5rem;
-            background: #111;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
-        a { color: var(--highlight); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        @media (max-width: 768px) {
-            .about { flex-direction: column; text-align: center; }
-            h1 { font-size: 2.5rem; }
-            .photo { width: 160px; height: 160px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haemin Lee. Korea-born, Tokyo-based. Editorial work, and writing after hours.">
+  <title>Haemin Lee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --ink: #e4e4e7;
+      --dim: #a1a1aa;
+      --faint: #71717a;
+      --line: #27272a;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { background: var(--bg); color: var(--ink); }
+    body {
+      font-family: "IBM Plex Sans", "Noto Sans KR", system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      padding: 72px 24px 48px;
+    }
+    main { width: min(100%, 38rem); margin: 0 auto; }
+    h1 {
+      font-weight: 500;
+      font-size: 1.75rem;
+      letter-spacing: -0.02em;
+    }
+    .lede {
+      margin-top: 8px;
+      color: var(--dim);
+    }
+    .links {
+      display: flex;
+      gap: 18px;
+      margin-top: 22px;
+      font-size: 0.95rem;
+    }
+    a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+    a:hover { border-bottom-color: var(--ink); }
+    section { margin-top: 56px; }
+    h2 {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+    }
+    p + p { margin-top: 12px; }
+    .row {
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+    .row:last-child { border-bottom: 1px solid var(--line); }
+    .when {
+      color: var(--faint);
+      font-size: 0.85rem;
+      margin-bottom: 2px;
+    }
+    .role { font-weight: 500; }
+    .place { color: var(--dim); }
+    ul {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+      color: var(--dim);
+    }
+    li + li { margin-top: 4px; }
+    footer {
+      margin-top: 64px;
+      color: var(--faint);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>HAEMIN LEE</h1>
-        <p class="subtitle">Korea-born • Japan-based Creative Professional</p>
-        <p><br>
-        <strong></strong></p>
-      
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#creative">Creative</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <main>
+    <h1>Haemin Lee</h1>
+    <p class="lede">Korea-born, Tokyo-based. Editorial work by day. Writing after.</p>
+    <p class="links">
+      <a href="https://marsko.art">marsko.art</a>
+      <a href="https://www.linkedin.com/in/haeminl">LinkedIn</a>
+      <a href="https://x.com/marsko">X</a>
+    </p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about">
-            <div class="photo"></div>
-            <div>
-                <p>Korea-born and based in Tokyo for over 6 years. I bring a unique blend of multilingual fluency, editorial expertise, and creative passion to the table.</p>
-                <p>Currently working at Google Play Store, leading Korean editorial efforts for nearly 4 years while collaborating closely with Marketing & GTM teams.</p>
-                <p>When not working, I write dark cyberpunk/horror/sci-fi novels, tanka poetry during Tokyo walks, and shoot caffenol B&W film photography.</p>
-            </div>
-        </div>
+    <section>
+      <h2>Now</h2>
+      <p>Korean editorial for Google Play, via Vaco, since 2022. Translations, tone, and QA, with the marketing and go-to-market side.</p>
+      <p>Before that, multilingual video review for YouTube, via Adecco, 2021–2022. Earlier still, package and print design. Art major.</p>
     </section>
 
-    <section id="experience" style="background:#111;">
-        <h2>Professional Experience</h2>
-       
-        <div class="experience-item">
-            <div class="job-title">Content &amp; Multilingual Communications Specialist</div>
-            <div class="company">Current Company (Google Play Store) via Vaco</div>
-            <div>2022 – Present</div>
-            <ul>
-                <li>Fully responsible for Korean editorial work for nearly 4 years</li>
-                <li>Perform Korean translations, QA other translators’ work, and adapt content to Google Play’s tone of voice</li>
-                <li>Work closely with Marketing Managers as part of the Go-To-Market (GTM) team</li>
-                <li>Led high-impact editorial projects that achieved tens of millions of views</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-title">YouTube Content Moderator</div>
-            <div class="company">Google via Adecco</div>
-            <div>2021 – 2022</div>
-            <ul>
-                <li>Multilingual video analysys</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-title">Graphics &amp; Traditional Art</div>
-            <div class="company">Package Design, Book &amp; Print Design</div>
-            <div>Earlier Career</div>
-            <ul>
-                <li>Hands-on graphic design and visual content creation (Art major background)</li>
-            </ul>
-        </div>
+    <section>
+      <h2>Work</h2>
+      <div class="row">
+        <p class="when">2022 — present</p>
+        <p class="role">Content and multilingual communications</p>
+        <p class="place">Google Play · via Vaco</p>
+        <ul>
+          <li>Korean editorial, almost four years in the same seat.</li>
+          <li>Translation, review of other translators, Play tone of voice.</li>
+          <li>With marketing managers on go-to-market work.</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="when">2021 — 2022</p>
+        <p class="role">Content moderator</p>
+        <p class="place">YouTube · via Adecco</p>
+        <ul>
+          <li>Multilingual video review.</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="when">Earlier</p>
+        <p class="role">Graphics and print</p>
+        <p class="place">Package, book, and print design</p>
+      </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">Korean (Native)</div>
-            <div class="skill">English (Business Fluent, TOEIC 895)</div>
-            <div class="skill">Japanese (JLPT N1, Near-Native)</div>
-            <div class="skill">Marketing &amp; GTM Collaboration</div>
-            <div class="skill">Social Media Strategy</div>
-            <div class="skill">Content Creation &amp; Editing</div>
-            <div class="skill">Creative Writing (Novels, Poetry)</div>
-            <div class="skill">Photography (Film &amp; Digital)</div>
-        </div>
+    <section>
+      <h2>Languages</h2>
+      <p>Korean, native. English, working — TOEIC 895. Japanese, JLPT N1.</p>
     </section>
 
-    <section id="creative" style="background:#111;">
-        <h2>Creative Works</h2>
-        <div class="project-item" style="margin-bottom:1.8rem;">
-            <strong>001 Series</strong> — Ongoing cyberpunk / horror / sci-fi novel serialization (English &amp; multilingual)
-        </div>
-        <div class="project-item" style="margin-bottom:1.8rem;">
-            <strong>Tanka &amp; Haiku</strong> — Regular Japanese short-form poetry paired with Tokyo suburban walks and film photography
-        </div>
-        <div class="project-item">
-            <strong>Caffenol B&amp;W Film Photography</strong> — Analog film projects
-        </div>
-        <p style="margin-top: 2rem; text-align:center;">
-           <a href="https://marsko.art">marsko.art</a>
-        </p>
+    <section>
+      <h2>After hours</h2>
+      <p>Dark novels and tanka, filed under Marsko. Caffenol black-and-white on the walk home.</p>
+      <p><a href="https://marsko.art">marsko.art</a></p>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p style="text-align:center; font-size:1.25rem; line-height:1.8;">
-            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/haeminl" target="_blank">linkedin.com/in/haeminl</a><br>
-        </p>
-    </section>
-
-    <footer>
-        © 2026 Haemin Lee. Tokyo, Japan.<br>
-        Made with ❤️ for passionate applications
-    </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <footer>Haemin Lee</footer>
+  </main>
 </body>
 </html>
